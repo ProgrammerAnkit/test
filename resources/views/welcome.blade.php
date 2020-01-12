@@ -28,7 +28,7 @@
     </div>
 
     <div class="container">
-        <form action=" " method="POST">
+        <form action=" {{ url('/student_details') }}" method="POST">
             {{csrf_field()}}
             Student name:<br>
             <input type="text" name="student_name" value=><br>
