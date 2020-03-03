@@ -28,12 +28,12 @@
     </div>
 
     <div class="container">
-        <form action=" {{ url('/student_details') }}" method="POST">
+        <form action=" /update_user/{{ $service->id }}" method="POST">
             {{csrf_field()}}
             Student name:<br>
-            <input type="text" name="student_name"><br>
+            <input type="text" name="student_name" value="{{$service->student_name}}"><br>
             Mobile no:<br>
-            <input type="number" name="mobile_no"><br><br>
+            <input type="number" name="mobile_no" value="{{$service->mobile_no}}"><br><br>
             <button type="submit">submit</button>
         </form>
 

@@ -17,7 +17,6 @@ class CreateStudentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('student_name');
             $table->string('mobile_no');
-
             $table->timestamps();
         });
     }
